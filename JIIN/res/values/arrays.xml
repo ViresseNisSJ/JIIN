@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bodyType">
+        <item>나 슬림해</item>
+        <item>보통이야</item>
+        <item>적당한 근육</item>
+        <item>완전 근육질 몸매</item>
+        <item>통통한 귀여운 맛</item>
+    </string-array>
+    
+    <string-array name="drinking">
+        <item>전혀 안마셔</item>
+        <item>한두잔 정도</item>
+        <item>적당히 마셔</item>
+        <item>즐겨 마시는 편</item>
+        <item>완전 주당이지</item>
+    </string-array>
+    
+    <string-array name="smoke">
+        <item>흡연</item>
+        <item>비흡연</item>
+    </string-array>
+
+    
+    <string-array name="religion">
+        <item>무교</item>
+        <item>기독교</item>
+        <item>천주교</item>
+        <item>불교</item>
+        <item>기타</item>
+    </string-array>
+
+    
+    <string-array name="character">
+        <item>낙천적인</item>
+        <item>차분한</item>
+        <item>이성적인</item>
+        <item>감성적인</item>
+        <item>귀여운</item>
+        <item>터프한</item>
+        <item>섹시한</item>
+        <item>자상한</item>
+        <item>지적인</item>
+        <item>유머러스한</item>
+        <item>신중한</item>
+        <item>듬직한</item>
+        <item>성실한</item>
+    </string-array>
+
+    
+    <string-array name="hobby">
+        <item>독서</item>
+        <item>쇼핑</item>
+        <item>여행</item>
+        <item>맛집탐방</item>
+        <item>영화/공연관람</item>
+        <item>음악감상</item>
+        <item>사진찍기</item>
+        <item>구기종목</item>
+        <item>스포츠관람</item>
+        <item>등산</item>
+        <item>드라이브</item>
+        <item>요리하기</item>
+        <item>잠자기</item>
+    </string-array>
+    
+    <string-array name="myphoto">
+        <item>사진앨범</item>
+        <item>카메라</item>
+        <item>사진보기</item>
+    </string-array>
+    
+    <string-array name="myphoto2">
+        <item>사진앨범</item>
+        <item>카메라</item>
+    </string-array>
+
+    <string-array name="myphoto3">
+        <item>메인사진으로 지정</item>
+        <item>삭제</item>
+    </string-array>
+    
+    <string-array name="qType">
+        <item>일반문의</item>
+        <item>계정관련문의</item>
+        <item>결제문의</item>
+    </string-array>    
+    
+    <string-array name="invite">
+        <item>카카오톡 초대</item>
+        <item>문자 초대</item>
+        <item>이메일 초대</item>
+    </string-array>    
+    
+    
+</resources>

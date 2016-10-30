@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg6_3"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="355dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/option_back_noneline"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/option_height"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="키" />
+
+            <TextView
+                android:id="@+id/text_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="6dp"
+                android:gravity="right"
+                android:text="cm" />
+
+            <ImageView
+                android:id="@+id/image_check"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/bt_before" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/option_back_line" />
+
+        <LinearLayout
+            android:id="@+id/option_bodyType"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="체형" />
+
+            <TextView
+                android:id="@+id/text_bodyType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/image_check2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:src="@drawable/bt_before" />
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/option_back_line" />
+
+        <LinearLayout
+            android:id="@+id/option_drinking"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="음주 여부" />
+
+            <TextView
+                android:id="@+id/text_drinking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/image_check3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:src="@drawable/bt_before" />
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/option_back_line" />
+
+        <LinearLayout
+            android:id="@+id/option_smoke"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="흡연 여부" />
+
+            <TextView
+                android:id="@+id/text_smoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/image_check4"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:src="@drawable/bt_before" />
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/option_back_line" />
+
+        <LinearLayout
+            android:id="@+id/option_religion"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="종교" />
+
+            <TextView
+                android:id="@+id/text_religion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/image_check5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:src="@drawable/bt_before" />
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/option_back_line" />
+
+        <LinearLayout
+            android:id="@+id/option_character"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="성격" />
+
+            <TextView
+                android:id="@+id/text_character"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/image_check6"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:src="@drawable/bt_before" />
+        </LinearLayout>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/option_back_line" />
+
+        <LinearLayout
+            android:id="@+id/option_hobby"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="1dp"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="취미" />
+
+            <TextView
+                android:id="@+id/text_hobby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/image_check7"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="right"
+                android:src="@drawable/bt_before" />
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

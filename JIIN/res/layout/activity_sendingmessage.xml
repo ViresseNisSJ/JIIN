@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="축하드려요~ 00님으로부터 관심표현이 도착했스빈다~" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#222222"
+        android:text="안녕하세요~ 00지역에~!~~~~~" />
+
+    <EditText
+        android:id="@+id/edit_resendlike"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10" >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_resendlike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="쪽지보내기" />
+
+</LinearLayout>

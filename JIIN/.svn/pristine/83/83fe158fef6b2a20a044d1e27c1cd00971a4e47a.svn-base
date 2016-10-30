@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/abc_btn_radio_to_on_mtrl_000" />
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="당신에게 맞는 답안을 고르세요" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/abc_btn_radio_to_on_mtrl_015" />
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="TextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView
+            android:id="@+id/text_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="그여자" />
+        
+        <TextView
+            android:id="@+id/text_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/text_woman"
+            android:layout_marginLeft="20dp"
+            android:text="그남자" />
+
+        <RadioGroup 
+            android:id="@+id/radioGroup_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_woman"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="200dp" >
+            
+            <RadioButton
+            android:id="@+id/radio_woman1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <RadioButton
+            android:id="@+id/radio_woman2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/radio_woman1"
+            android:layout_marginTop="15dp"/>
+            <RadioButton
+            android:id="@+id/radio_woman3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/radio_woman2"
+            android:layout_marginTop="15dp" />
+            
+        </RadioGroup>
+        
+        <RadioGroup 
+            android:id="@+id/radioGroup_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/radioGroup_woman"
+            android:layout_marginTop="15dp" >
+            
+            <RadioButton
+            android:id="@+id/radio_man1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <RadioButton
+            android:id="@+id/radio_man2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/radio_man1"
+            android:layout_marginTop="15dp"/>
+            <RadioButton
+            android:id="@+id/radio_man3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/radio_man2"
+            android:layout_marginTop="15dp" />
+            
+        </RadioGroup>
+        
+        <TextView
+            android:id="@+id/text_answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="150dp"
+            android:text="a" />
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

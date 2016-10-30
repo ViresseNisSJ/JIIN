@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JIIN</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">JIIN</string>
+    <string name="title_activity_myprofile"></string>
+    <string name="title_activity_pos">PoSActivity</string>
+    <string name="title_activity_personal">PersonalActivity</string>
+    <string name="html_text"><![CDATA[<a href="myscheme://schemas.android.com/pos">이용약관</a> 및 <a href="myscheme://schemas.android.com/personal">개인정보 취급 방침</a>에 동의합니다.]]></string>
+    <string name="html_text2"><![CDATA[<a href="myscheme://schemas.android.com/missing_pw">비밀번호를 잃어버리셨나요?</a>]]></string>
+    <string name="menu_complete"></string>
+    <string name="title_activity_missing_pw">MissingPwActivity</string>
+    <string name="title_activity_certify">CertifyActivity</string>
+    <string name="open_desc">drawer-open</string>
+    <string name="close_desc">drawer-close</string>
+    <string name="title_activity_likemessage">쪽지함</string>
+    <string name="title_activity_relationmap">지인</string>
+
+</resources>

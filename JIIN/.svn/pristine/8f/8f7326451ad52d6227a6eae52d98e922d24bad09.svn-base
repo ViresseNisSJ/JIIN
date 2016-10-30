@@ -1,0 +1,43 @@
+package com.jiin.otherprofile;
+
+import com.jiin.MainActivity;
+import com.jiin.R;
+import com.jiin.myprofile.BasicFragment;
+import com.jiin.myprofile.OptionFragment;
+import com.jiin.myprofile.QNAFragment;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTabHost;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+
+public class OtherprofileFragment extends Fragment {
+	FragmentTabHost otabHost;
+	
+	@Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		
+		View view= inflater.inflate(R.layout.fragment_otherprofile, container, false);
+		
+		otabHost = (FragmentTabHost)view.findViewById(R.id.tabhost);
+		otabHost.setup(getActivity(), getChildFragmentManager(), R.id.realtabcontent);
+		
+		otabHost.addTab(otabHost.newTabSpec("기본정보").setIndicator("기본정보"), BasicFragment.class ,null);
+        otabHost.addTab(otabHost.newTabSpec("부가정보").setIndicator("부가정보"), OptionFragment.class ,null);
+        otabHost.addTab(otabHost.newTabSpec("Q&A").setIndicator("Q&A"), QNAFragment.class ,null);
+
+		
+		return view;
+    }
+   
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+      
+
+    }
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="알림" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="새로운 매칭에 대한 푸시 알림" />
+        
+        <android.support.v7.widget.SwitchCompat
+             android:id="@+id/switct_push"
+             android:layout_width="50dp"
+             android:layout_height="wrap_content"
+             android:textOff="꺼짐"
+             android:textOn="켜짐" />
+
+    </LinearLayout>
+    
+	<TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="소개유무" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이성에게 내 프로필 보이기" />
+        
+        <android.support.v7.widget.SwitchCompat
+             android:id="@+id/switch_expose"
+             android:layout_width="50dp"
+             android:layout_height="wrap_content"
+             android:textOff="꺼짐"
+             android:textOn="켜짐" />
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/textView111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="소개범위 설정" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="소개받을 수 있는 이성 풀 설정" />
+        
+        <android.support.v7.widget.SwitchCompat
+             android:id="@+id/switch_range"
+             android:layout_width="50dp"
+             android:layout_height="wrap_content"
+             android:textOff="꺼짐"
+             android:textOn="켜짐" />
+
+    </LinearLayout>
+
+	<TextView
+        android:id="@+id/textView1111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="번정정보" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재정보" />
+        
+        <TextView
+            android:id="@+id/textView22222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="버전정보띄우기" />
+
+
+    </LinearLayout>
+</LinearLayout>

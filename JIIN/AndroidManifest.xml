@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jiin"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission
+        android:name="com.jiin.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.jiin.permission.C2D_MESSAGE" />
+    
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/jiin_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name=".start.SplashActivity"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+		        <action android:name="android.intent.action.VIEW"></action>
+		        <category android:name="android.intent.category.DEFAULT"></category>
+		        <category android:name="android.intent.category.BROWSABLE"></category>
+		        <data android:host="invite" android:scheme="jiin"></data>
+		    </intent-filter>
+		    
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/kakao_scheme" android:host="@string/kakaolink_host" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        <activity
+            android:name=".start.StartActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".start.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        
+        
+        <activity
+            android:name=".start.SignupActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider440064549498529"
+            android:exported="true" />
+        
+        <activity
+            android:name=".myprofile.BasicActivity"
+            android:label="@string/app_action_name" 
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".myprofile.OptionActivity"
+            android:label="@string/app_action_name" 
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.jiin.myprofile.qna.QNAActivity"
+            android:label="@string/app_action_name" 
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.jiin.myprofile.qna.QnaDetailActivity"
+            android:label="@string/app_action_name" 
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".start.PoSActivity"
+            android:label="@string/title_activity_pos"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="schemas.android.com"
+                    android:pathPrefix="/pos"
+                    android:scheme="myscheme" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".start.PersonalActivity"
+            android:label="@string/title_activity_personal"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="schemas.android.com"
+                    android:pathPrefix="/personal"
+                    android:scheme="myscheme" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jiin.start.MissingPwActivity"
+            android:label="@string/title_activity_myprofile"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="schemas.android.com"
+                    android:pathPrefix="/missing_pw"
+                    android:scheme="myscheme" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".myprofile.CertifyActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        
+        <activity
+            android:name=".LikeMessageActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+
+        <activity
+            android:name="com.jiin.menu.message.MessageActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        <activity
+            android:name="com.jiin.menu.message.MessageContentActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        
+        <activity
+            android:name=".menu.NoticeActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        <activity
+            android:name=".menu.CustomerServiceActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        <activity
+            android:name=".menu.ShopActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        <activity
+            android:name=".menu.SetupActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        
+        <activity
+            android:name=".menu.WithdrawActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        
+        <activity
+            android:name=".menu.ChangePwActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        
+        <activity
+            android:name=".otherprofile.OtherProfileActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        
+        <activity
+            android:name=".CheckMessageActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        
+        <activity
+            android:name="com.jiin.mypage.MypageActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        
+        <activity
+            android:name="com.jiin.myprofile.PhotoGuideActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        
+        <activity
+            android:name="com.jiin.otherprofile.relationship.RelationShipActivity"
+            android:label="@string/app_action_name" >
+        </activity>
+        
+       <activity
+            android:name="com.jiin.otherprofile.BigPictureActivity"
+            android:label="@string/app_action_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        
+        
+        <receiver
+            android:name="GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.jiin" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="GcmIntentService" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <meta-data
+            android:name="com.kakao.sdk.AppKey" android:value="@string/kakao_app_key" />
+        
+        
+    </application>
+
+</manifest>

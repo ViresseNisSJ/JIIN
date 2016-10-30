@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="anim_duration_nomal">300</integer>
-    <integer name="anim_duration_fast">100</integer>
-    <integer name="anim_duration_slow">500</integer>
-</resources>

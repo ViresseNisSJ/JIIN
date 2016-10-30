@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.triples.bf_skku.MainActivity">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:umanoPanelHeight="145px"
+        sothree:umanoShadowHeight="8dp"
+        sothree:umanoParallaxOffset="100dp"
+        sothree:umanoDragView="@+id/dragView"
+        sothree:umanoOverlay="true">
+
+        <!-- MAIN CONTENT -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.Toolbar
+                xmlns:sothree="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/main_toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                sothree:theme="@style/ActionBar"
+                android:layout_width="match_parent"/>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/map"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/map"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical">
+
+                        <ImageButton
+                            android:id="@+id/suseon"
+                            android:layout_width="52.59dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="200dp"
+                            android:layout_marginLeft="120dp"
+                            android:background="@drawable/btn_suseon"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:onClick="buildingClicked"/>
+
+                        <ImageButton
+                            android:id="@+id/annex"
+                            android:layout_width="52.59dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_annex"
+                            android:layout_alignBottom="@+id/suseon"
+                            android:layout_marginLeft="130dp"
+                            android:layout_marginBottom="40dp"
+                            android:onClick="buildingClicked"/>
+
+                        <ImageButton
+                            android:id="@+id/law"
+                            android:layout_width="52.59dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_law"
+                            android:layout_below="@+id/suseon"
+                            android:layout_marginLeft="115dp"
+                            android:layout_marginTop="25dp"
+                            android:onClick="buildingClicked"/>
+
+                        <ImageButton
+                            android:id="@+id/humanities"
+                            android:layout_width="52.59dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_humanities"
+                            android:layout_alignBottom="@+id/annex"
+                            android:layout_toRightOf="@+id/annex"
+                            android:layout_marginBottom="40dp"
+                            android:onClick="buildingClicked"/>
+
+                        <ImageButton
+                            android:id="@+id/economics"
+                            android:layout_width="52.59dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_economics"
+                            android:layout_alignBottom="@+id/humanities"
+                            android:layout_toRightOf="@+id/humanities"
+                            android:layout_marginLeft="30dp"
+                            android:onClick="buildingClicked"/>
+
+
+                        <ImageButton
+                            android:id="@+id/hoam"
+                            android:layout_width="52.59dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_hoam"
+                            android:layout_alignBottom="@+id/annex"
+                            android:layout_toRightOf="@+id/annex"
+                            android:layout_marginLeft="35dp"
+                            android:layout_marginBottom="10dp"
+                            android:onClick="buildingClicked"/>
+
+                        <ImageButton
+                            android:id="@+id/business"
+                            android:layout_width="52.59dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_business"
+                            android:layout_below="@+id/economics"
+                            android:layout_toRightOf="@+id/hoam"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="40dp"
+                            android:onClick="buildingClicked"/>
+
+                        <ImageButton
+                            android:id="@+id/professor"
+                            android:layout_width="52.59dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_professor"
+                            android:layout_alignTop="@+id/economics"
+                            android:layout_toRightOf="@+id/business"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="-10dp"
+                            android:onClick="buildingClicked"/>
+
+                        <ImageButton
+                            android:id="@+id/library"
+                            android:layout_width="52.59dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_library"
+                            android:layout_alignTop="@+id/professor"
+                            android:layout_toRightOf="@+id/professor"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="85dp"
+                            android:onClick="buildingClicked"/>
+
+                        <ImageButton
+                            android:id="@+id/student"
+                            android:layout_width="52.59dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_student"
+                            android:layout_alignTop="@+id/law"
+                            android:layout_toRightOf="@+id/professor"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:onClick="buildingClicked"/>
+
+                        <ImageButton
+                            android:id="@+id/memorial"
+                            android:layout_width="105dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_memorial"
+                            android:layout_alignTop="@+id/student"
+                            android:layout_toRightOf="@+id/library"
+                            android:layout_marginTop="-45dp"
+                            android:layout_marginLeft="-10dp"
+                            android:onClick="buildingClicked"/>
+
+                        <ImageButton
+                            android:id="@+id/international"
+                            android:layout_width="52.59dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/btn_international"
+                            android:layout_below="@+id/memorial"
+                            android:layout_toRightOf="@+id/memorial"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:onClick="buildingClicked"/>
+
+                    </RelativeLayout>
+                </FrameLayout>
+            </HorizontalScrollView>
+        </FrameLayout>
+
+        <!-- SLIDING LAYOUT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#aaaaaa"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="false"
+            android:id="@+id/dragView">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:src="@drawable/bottom_menu">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="3dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_search"
+                        android:layout_marginRight="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/search"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:maxHeight="35dp"
+                        android:layout_weight="1"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_facilities"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/facilities"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:maxHeight="35dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="3dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_center"
+                        android:layout_marginRight="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:maxHeight="35dp"
+                        android:layout_weight="1"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_call"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/call"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:maxHeight="35dp"
+                        android:layout_weight="1"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="3dp"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_equal"
+                        android:layout_marginRight="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/equal"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:maxHeight="35dp"
+                        android:layout_weight="1"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_developer"
+                        android:layout_marginLeft="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/developer"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:maxHeight="35dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+</RelativeLayout>
